@@ -1,0 +1,35 @@
+.card {
+  border-radius: 5px;
+  background-color: goldenrod;
+  width: 200px;
+  padding: 6px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+
+  &_photo {
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    font-weight: 700;
+  }
+
+  &_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &_line {
+    height: 4px;
+    border-radius: 2px;
+    background-color: grey;
+  }
+}

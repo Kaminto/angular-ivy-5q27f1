@@ -1,0 +1,15 @@
+<div class="items-wrapper">
+  <my-card *ngFor="let item of visibleItems.items" [item]="item"></my-card>
+</div>
+
+<div class="pagination-wrapper">
+  <my-pagination [total]="visibleItems.total" [formControl]="paginationControl">
+  </my-pagination>
+
+  <!-- <my-pagination
+    [total]="visibleItems.total"
+    [ngModel]="pagination"
+    (ngModelChange)="onPageChange($event)"
+  >
+  </my-pagination> -->
+</div>
